@@ -14,7 +14,7 @@ script:
 after_success:
   - docker build -t hjy8697/docker-frontend ./frontend
   - docker build -t hjy8697/docker-backend ./backend
-  - docker build hjy8697/docker-nginx ./nginx
+  - docker build -t hjy8697/docker-nginx ./nginx
 
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
 
