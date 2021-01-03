@@ -25,6 +25,13 @@ services:
     volumes: 
       - /app/node_modules
       - ./backend:/app
+      # 환경변수 추가
+      environment: 
+        MYSQL_HOST: mysql
+        MYSQL_USER: root
+        MYSQL_ROOT_PASSWORD: wodud2614!
+        MYSQL_DATABASE: react_fullstack_app
+        MYSQL_PORT: 3306
 
   # mysql:
   #   build: ./mysql
