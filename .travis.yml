@@ -22,7 +22,6 @@ after_success:
   - docker push hjy8697/docker-backend
   - docker push hjy8697/docker-nginx 
 
-  # 배포부분
   deploy:
     provider: elasticbeanstalk
     region: "ap-northeast-2"
